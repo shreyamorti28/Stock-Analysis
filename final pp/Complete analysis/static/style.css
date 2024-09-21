@@ -1,0 +1,17 @@
+body{
+    background-attachment: fixed;
+    background-image: url("./back.jpg");
+}
+.text{
+    text-align: center;
+    align-self: center;
+    align-self: center;
+    color: white;
+}
+.bold{
+    color: white;
+    font-size: 45px;
+}
+.black{
+    color: black;
+}

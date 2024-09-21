@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Risk Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="center" style="font-size: 60px;">Stock Risk Results</h1>
+    <p class="label ">Risk Metrics:</p>
+    <ul class="center ">
+        <p>Volatility (annualized): {{ volatility }}</p>
+        <p>Value at Risk (VaR) at 5% level: {{ var_5 }}</p>
+        <p>Conditional Value at Risk (CVaR) at 5% level: {{ cvar_5 }}</p>
+    </ul>
+</body>
+</html>

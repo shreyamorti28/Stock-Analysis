@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Risk Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="center" style="font-size: 60px;">Stock Risk Calculator</h1>
+    <form class="form" action="/results" method="post">
+        <label class="label" for="ticker_symbol">Ticker Symbol:</label>
+        <input type="text" class="size" id="ticker_symbol" name="ticker_symbol" required><br><br>
+
+        <label class="label" for="start_date">Start Date:</label>
+        <input type="date" class="size" id="start_date" name="start_date" required><br><br>
+
+        <label class="label" for="end_date">End Date :</label>
+        <input type="date" class="size" id="end_date" name="end_date" required><br><br>
+
+        <input class="submit" style="font-size: 45px;" type="submit" value="Calculate">
+    </form>
+</body>
+</html>

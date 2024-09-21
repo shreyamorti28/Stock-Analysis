@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Comparison</title>
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<body>
+    <h1 class="center" style="font-size: 60px;">Stock Comparison</h1>
+    <form class="form" action="/" method="post">
+        <label class="label" for="company_names">Company Names (comma-separated):</label>
+        <input type="text" class="size" id="company_names" name="company_names" required><br><br>
+
+        <label class="label" for="start_date">Start Date :</label>
+        <input type="date" class="size" id="start_date" name="start_date" required><br><br>
+
+        <label class="label" for="end_date">End Date :</label>
+        <input type="date" class="size" id="end_date" name="end_date" required><br><br>
+
+        <label class="label" for="chart_type">Chart Type:</label>
+        <select id="chart_type" class="size" name="chart_type">
+            <option value="closing prices">Closing Prices</option>
+            <option value="returns">Returns</option>
+        </select><br><br>
+
+        <input class="size" type="submit" value="Submit">
+    </form>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>

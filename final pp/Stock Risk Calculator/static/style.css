@@ -1,0 +1,28 @@
+body{
+    background-attachment: fixed;
+    background-image: url("./back.jpg");
+}
+.form{
+    text-align: center;
+    align-self: center;
+    align-self: center;
+}
+.label{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+
+}
+.black{
+    color: black;
+}
+.center
+{
+    text-align: center;
+
+    color: white;
+    font-size: 38px;
+}
+.size{
+    font-size: 38px;
+}

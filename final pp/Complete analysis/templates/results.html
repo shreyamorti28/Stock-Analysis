@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Data Analysis Results</title>
+    <style>
+        .plot-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .plot {
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 style="text-align: center;color: white;font-size: 70px;">Stock Data Analysis Results</h1>
+    <div class="plot-container">
+        {% for plot_url in plot_urls %}
+        <div class="plot">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Plot">
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
