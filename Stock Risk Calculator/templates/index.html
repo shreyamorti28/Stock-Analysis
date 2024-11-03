@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Risk Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h2>Stock Market Risk Analysis</h2>
+    <div>
+
+        <form class="container" action="/results" method="POST">
+            <label class="label" for="ticker_symbol">Ticker Symbol:</label>
+            <input type="text" id="ticker_symbol" name="ticker_symbol" required>
+
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
