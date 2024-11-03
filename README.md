@@ -22,6 +22,6 @@ This project is a stock analysis web application that allows users to fetch real
 - **Pandas**: For data manipulation and analysis.
 - **Matplotlib**: For creating charts and visualizations.
 - **yfinance**: For fetching real-time stock market data.
-## Product Showcase
+## Project Showcase
 
 ![Product Showcase](./stock_analysis.gif)
